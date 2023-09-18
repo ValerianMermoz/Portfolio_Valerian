@@ -1,19 +1,44 @@
-import React from 'react'
+import { ReactComponent as Instagram } from "./images/icons/instagram.svg";
+import { ReactComponent as Linkedin } from "./images/icons/linkedin.svg";
+import { ReactComponent as Gmail } from "./images/icons/GMAIL.svg";
+import React from "react";
 
 const Contact = () => {
-    return (
-        <div name='contact' className='w-full h-screen flex justify-center items-center p-4'>
-            <form action="POST" className='flex flex-col max-w-[700px] w-full'>
-                <div className='pb-8'>
-                    <p className='text-4xl font bold inline border-b-4 border-cyan-500 text-cyan-500'>Formulaire de contact</p>
-                </div>
-                <input className='bg-[#ccd6f6] p2' type="text" placeholder="Nom" name='name' required/>
-                <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder="Email" name="email" required/>
-                <textarea className='bg-[#ccd6f6] p-2' name="message" row="10" placeholder="Message" required></textarea>
-                <button className='bg-[#ccd6f6] border-2 hover:bg-cyan-600 hover:border-cyan-600 px-4 py-3 my-8 mx-auto flex items-center'>Envoyer</button>
-            </form>
+  return (
+    <section
+      className="min-w-375 flex flex-wrap justify-end flex-col"
+      id="Contact"
+    >
+      <div className="text-center p-10 py-10 bg-neutral-800">
+        <h1 className="text-3xl py-2 text-teal-600 font-medium md:text-5xl">
+          Vous souhaitez me contacter ?
+        </h1>
+        <p className="text-md py-5 leading-8 text-slate-100">
+          Retrouvez moi sur l'un des liens ci-dessous :
+        </p>
+
+        <div className="gap-20 md:text-5xl flex flex-wrap justify-center py-3">
+          <a
+            href="https://www.instagram.com/valerian_mermoz/"
+            target="_blank"
+            alt="lien vers mon compte instagram"
+          >
+            <Instagram />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/val%C3%A9rian-mermoz-99267b13a/"
+            target="_blank"
+            alt="lien vers mon compte linkedin"
+          >
+            <Linkedin />
+          </a>
+          <a href="mailto:valerian.mermoz@gmail.com" alt="lien pour m'envoyer un email">
+            <Gmail />
+          </a>
         </div>
-    )
-}
+      </div>
+    </section>
+  );
+};
 
 export default Contact;
