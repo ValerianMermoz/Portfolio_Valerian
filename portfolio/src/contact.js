@@ -1,7 +1,7 @@
-import { ReactComponent as Instagram } from "./images/icons/instagram.svg";
-import { ReactComponent as Linkedin } from "./images/icons/linkedin.svg";
-import { ReactComponent as Gmail } from "./images/icons/GMAIL.svg";
 import React from "react";
+import Instagram from "./images/icons/instagram.png";
+import Linkedin from "./images/icons/linkedin.png";
+import Mail from "./images/icons/mail.png";
 
 const Contact = () => {
   return (
@@ -17,24 +17,26 @@ const Contact = () => {
           Retrouvez moi sur l'un des liens ci-dessous :
         </p>
 
-        <div className="gap-20 md:text-5xl flex flex-wrap justify-center py-3">
+        <div className="gap-5 md:text-5xl md:gap-20 flex flex-wrap justify-center py-3  ">
           <a
             href="https://www.instagram.com/valerian_mermoz/"
             target="_blank"
             alt="lien vers mon compte instagram"
+            className="hover:animate-[wiggle_0.4s_ease-in-out] p-4"
           >
-            <Instagram />
+            <img src={Instagram} className="logocontact" alt="Lien pour profil instagram"/>
           </a>
           <a
             href="https://www.linkedin.com/in/val%C3%A9rian-mermoz-99267b13a/"
             target="_blank"
             alt="lien vers mon compte linkedin"
-          >
-            <Linkedin />
-          </a>
-          <a href="mailto:valerian.mermoz@gmail.com" alt="lien pour m'envoyer un email">
-            <Gmail />
-          </a>
+            className="hover:animate-[wiggle_0.4s_ease-in-out] p-4"
+          ><img src={Linkedin} className="logocontact" alt="Lien profil Linkedin"/></a>
+          <a
+            href="mailto:valerian.mermoz@gmail.com"
+            alt="lien pour m'envoyer un email"
+            className="hover:animate-[wiggle_0.4s_ease-in-out] p-4"
+          ><img src={Mail} className="logocontact" alt="Lien pour envoi de mail"/></a>
         </div>
       </div>
     </section>

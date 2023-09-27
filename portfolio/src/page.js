@@ -3,6 +3,8 @@ import Header from "./header";
 import Contact from "./contact";
 import Competences from "./competences";
 import Bio from "./bio"
+import Data from './projet';
+import { useParams } from 'react-router-dom';
 
 function Page() {
   return (
