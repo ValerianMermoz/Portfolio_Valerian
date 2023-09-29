@@ -39,6 +39,7 @@ const Projets = () => {
                 <img
                   src={Github}
                   className="hover:animate-[wiggle_0.4s_ease-in-out] p-4"
+                  alt="logo github"
                 ></img>{" "}
               </a>
             </div>
@@ -79,6 +80,7 @@ const Projets = () => {
                 <img
                   src={Github}
                   className="hover:animate-[wiggle_0.4s_ease-in-out] p-4"
+                  alt="logo github"
                 ></img>{" "}
               </a>
             </div>
@@ -130,6 +132,7 @@ const Projets = () => {
                 <img
                   src={Github}
                   className="hover:animate-[wiggle_0.4s_ease-in-out] p-4"
+                  alt="logo github"
                 ></img>{" "}
               </a>
             </div>
@@ -180,6 +183,7 @@ const Projets = () => {
                 <img
                   src={Github}
                   className="hover:animate-[wiggle_0.4s_ease-in-out] p-4"
+                  alt="logo github"
                 ></img>{" "}
               </a>
             </div>
